@@ -3,30 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Page</title>
+    <title>Feedback Form</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
-            background: #f0f4ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background: #eef3ff;
             font-family: Arial, sans-serif;
+            padding-top: 40px;
         }
 
-        .login-card {
-            width: 380px;
+        .feedback-card {
+            max-width: 550px;
+            margin: auto;
             background: #fff;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
         }
 
-        .btn-login {
+        .btn-submit {
             width: 100%;
             border-radius: 25px;
         }
@@ -35,33 +32,53 @@
 
 <body>
 
-    <div class="login-card">
-        <h3 class="text-center mb-4">Login</h3>
+    <div class="feedback-card">
+        <h3 class="text-center mb-3">Feedback Form</h3>
+        <p class="text-center text-muted">
+            Share your opinions about our E-commerce Dashboard
+        </p>
 
         <form>
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
             <div class="mb-3">
                 <label class="form-label">Email Address</label>
                 <input type="email" class="form-control" placeholder="Enter your email" required>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Password</label>
-                <input type="password" class="form-control" placeholder="Enter password" required>
+                <label class="form-label">Rate Your Experience</label>
+                <select class="form-select" required>
+                    <option value="" disabled selected>Select rating</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
             </div>
 
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <div>
-                    <input type="checkbox" id="remember">
-                    <label for="remember">Remember Me</label>
-                </div>
-                <a href="#" class="small text-decoration-none">Forgot Password?</a>
+            <div class="mb-3">
+                <label class="form-label">Suggestions</label>
+                <textarea class="form-control" rows="3" placeholder="Your suggestions..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-login">Login</button>
+            <div class="mb-3">
+                <label class="form-label">Additional Comments</label>
+                <textarea class="form-control" rows="3" placeholder="Your comments..."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" id="updates">
+                <label for="updates">I want to receive updates and newsletters</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Submit Feedback</button>
         </form>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
