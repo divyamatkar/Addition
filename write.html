@@ -2,92 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form Validation using JavaScript – Aim, Objectives, Theory & Conclusion</title>
+    <title>Add Two Numbers – Aim, Objectives, Theory & Conclusion</title>
 </head>
 <body>
 
-    <h1>Form Validation using JavaScript</h1>
+    <h1>Addition Program Using JavaScript</h1>
 
     <h2>Aim:</h2>
     <p>
-        To create a JavaScript-based form validation program that validates user input fields such as
-        name, email, password, and confirm password before submitting the form.
+        To create a JavaScript program that performs the addition of two numbers by taking user input 
+        and displaying the result on a webpage.
     </p>
 
     <h2>Objectives:</h2>
     <ul>
-        <li>To understand how to validate form fields using JavaScript on the client side.</li>
-        <li>To check mandatory fields like name, email, password, and confirm password.</li>
-        <li>To apply validation rules such as minimum length, pattern matching, and password matching.</li>
-        <li>To display appropriate error and success messages dynamically on the webpage.</li>
+        <li>To understand how to take input values from the user using HTML input elements.</li>
+        <li>To apply JavaScript for performing arithmetic operations.</li>
+        <li>To dynamically display the output using DOM manipulation.</li>
+        <li>To enhance user interaction through a graphical interface.</li>
     </ul>
 
     <h2>Theory:</h2>
-
-    <h3>Form Validation:</h3>
     <p>
-        Form validation is the process of checking whether the data entered by the user in a form is correct,
-        complete, and acceptable before it is sent to the server. Validation can be:
-    </p>
-    <ul>
-        <li><strong>Client-side validation:</strong> Done using JavaScript in the browser.</li>
-        <li><strong>Server-side validation:</strong> Done on the server after submission.</li>
-    </ul>
-
-    <h3>Client-Side Validation using JavaScript:</h3>
-    <p>JavaScript is commonly used for client-side validation because it:</p>
-    <ul>
-        <li>Provides instant feedback to the user.</li>
-        <li>Reduces unnecessary server requests.</li>
-        <li>Improves user experience.</li>
-    </ul>
-
-    <h3>Validation Rules Used in This Program:</h3>
-
-    <h4>Name:</h4>
-    <ul>
-        <li>Cannot be empty.</li>
-        <li>Must contain only letters and spaces (<code>/^[A-Za-z\s]+$/</code>).</li>
-        <li>Must be at least 3 characters long.</li>
-    </ul>
-
-    <h4>Email:</h4>
-    <p>
-        Checked using a regular expression pattern like
-        <code>^[^\s@]+@[^\s@]+\.[^\s@]+$</code> to ensure proper email format.
+        JavaScript is a client-side scripting language used to make web pages interactive. 
+        Addition is a basic arithmetic operation where two numeric values are summed to get a final result.
     </p>
 
-    <h4>Password:</h4>
-    <ul>
-        <li>Must be at least 6 characters long.</li>
-    </ul>
+    <p>To build this program, the following concepts are used:</p>
 
-    <h4>Confirm Password:</h4>
-    <ul>
-        <li>Must match the password field.</li>
-    </ul>
+    <h3>HTML Input Fields:</h3>
+    <p><code>&lt;input type="number"&gt;</code> is used to allow users to enter numeric values.</p>
+
+    <h3>JavaScript Variables and Operators:</h3>
+    <p>
+        Variables are used to store the values entered by the user, and the <code>+</code> operator 
+        is used to perform the addition operation.
+    </p>
 
     <h3>DOM Manipulation:</h3>
-    <p>JavaScript uses <code>document.getElementById()</code> to:</p>
-    <ul>
-        <li>Read values from input fields.</li>
-        <li>Show error messages inside <code>&lt;div class="error"&gt;</code> elements.</li>
-        <li>Display a success message when all validations pass.</li>
-    </ul>
-
-    <h3>Event Handling:</h3>
-    <p>The <code>submit</code> event of the form is captured using:</p>
-    <p><code>document.getElementById('myForm').addEventListener('submit', ...);</code></p>
     <p>
-        <code>event.preventDefault()</code> is used to stop the form from submitting if validation fails.
+        The method <code>document.getElementById()</code> is used to fetch input values and display 
+        the result dynamically without refreshing the webpage.
+    </p>
+
+    <p><strong>Example calculation:</strong><br>
+        If number1 = 10 and number2 = 5 → Result = 10 + 5 = 15
+    </p>
+
+    <p>
+        This demonstrates how JavaScript connects with HTML to create interactive applications.
     </p>
 
     <h2>Conclusion:</h2>
     <p>
-        By implementing this form validation program using JavaScript, we learned how to verify user inputs on the
-        client side before form submission. This practical helped us understand the use of regular expressions,
-        conditional checks, DOM manipulation, and event handling. It also showed how proper validation improves
-        data quality, user experience, and reduces invalid submissions to the server.
+        By performing this program, we successfully learned how to accept user input and process arithmetic 
+        operations using JavaScript. This practical helped us understand DOM manipulation, event handling, 
+        and how JavaScript enhances webpage interactivity by showing results instantly.
     </p>
 
 </body>
