@@ -2,70 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Feedback Form – Aim, Objectives, Theory and Conclusion</title>
+    <title>AJAX XMLHttpRequest – Aim, Objectives, Theory & Conclusion</title>
 </head>
 <body>
 
-    <h1>Feedback Form for E-commerce Dashboard</h1>
+    <h1>AJAX – Fetching Remote Data using XMLHttpRequest</h1>
 
     <h2>Aim:</h2>
     <p>
-        To create a responsive Feedback Form using HTML, CSS, and Bootstrap to collect user opinions, suggestions,
-        and comments regarding the e-commerce dashboard.
+        To create a program using AJAX and the <code>XMLHttpRequest</code> object to fetch and display remote data 
+        from a server without reloading the webpage.
     </p>
 
     <h2>Objectives:</h2>
     <ul>
-        <li>To design an interactive and user-friendly feedback form interface.</li>
-        <li>To use HTML form elements such as text fields, dropdowns, textarea, checkbox, and buttons.</li>
-        <li>To apply CSS and Bootstrap styling for improved UI and responsiveness.</li>
-        <li>To allow users to share their experience and suggestions for improving the e-commerce dashboard.</li>
+        <li>To understand how AJAX works in asynchronous web communication.</li>
+        <li>To learn how to send HTTP requests using the <code>XMLHttpRequest</code> object.</li>
+        <li>To dynamically fetch and display data from a remote server.</li>
+        <li>To demonstrate background data loading without refreshing the webpage.</li>
     </ul>
 
     <h2>Theory:</h2>
-
-    <h3>HTML (HyperText Markup Language):</h3>
     <p>
-        HTML provides the structure of the form. Elements such as
-        <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>,
-        <code>&lt;select&gt;</code>, <code>&lt;label&gt;</code>, and <code>&lt;button&gt;</code>
-        are used to capture user information like name, email, rating, suggestions, and comments.
+        <strong>AJAX (Asynchronous JavaScript and XML)</strong> is a technique used in web development to send and 
+        receive data from a server asynchronously without requiring a full page reload. AJAX improves user experience 
+        by allowing parts of a web page to update dynamically.
     </p>
 
-    <h3>CSS (Cascading Style Sheets):</h3>
-    <p>
-        CSS is used to enhance the appearance and layout of the form.
-        Properties such as <code>margin</code>, <code>padding</code>, <code>border-radius</code>,
-        <code>background-color</code>, and <code>box-shadow</code> are used to style the feedback form and
-        improve readability.
-    </p>
-
-    <h3>Bootstrap:</h3>
-    <p>
-        Bootstrap is a front-end framework that simplifies responsive web design.
-        It provides ready-made classes like <code>form-control</code>, <code>form-select</code>,
-        <code>btn</code>, <code>container</code>, <code>mb-3</code>, and <code>text-center</code> to create
-        a visually appealing and mobile-friendly layout.
-    </p>
-
-    <h3>Purpose of Feedback Form:</h3>
-    <p>Feedback forms collect user experience data which helps improve the system. This includes:</p>
+    <h3>XMLHttpRequest Object:</h3>
     <ul>
-        <li>Satisfaction rating</li>
-        <li>Suggestions for improvements</li>
-        <li>Additional comments</li>
-        <li>Communication preferences</li>
+        <li>This is a built-in JavaScript object used to interact with remote servers.</li>
+        <li>It allows sending HTTP requests such as <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code>.</li>
     </ul>
-    <p>
-        Such feedback is important for enhancing usability and improving user satisfaction in the e-commerce dashboard.
-    </p>
+
+    <h3>Working Process:</h3>
+    <ol>
+        <li>Create an <code>XMLHttpRequest</code> object.</li>
+        <li>Open the connection using <code>xhr.open()</code>.</li>
+        <li>Send the request using <code>xhr.send()</code>.</li>
+        <li>Receive and process the response when <code>readyState === 4</code> and <code>status === 200</code>.</li>
+    </ol>
+
+    <h3>Advantages of AJAX:</h3>
+    <ul>
+        <li>Faster and more responsive webpages.</li>
+        <li>Reduces server load.</li>
+        <li>Provides better user experience.</li>
+    </ul>
 
     <h2>Conclusion:</h2>
     <p>
-        By developing this feedback form using HTML, CSS, and Bootstrap, we learned how to build a responsive,
-        structured, and user-friendly interface to collect user feedback. This practical enhanced understanding of
-        form elements, styling, and responsiveness, and demonstrated how web technologies can be used to gather
-        valuable user insights for improving an e-commerce platform.
+        By creating this AJAX program using <code>XMLHttpRequest</code>, we learned how to fetch remote data 
+        asynchronously and display it on a webpage without reloading the page. This practical demonstrates how AJAX 
+        enhances web interactivity and improves dynamic content handling in modern web applications.
     </p>
 
 </body>
